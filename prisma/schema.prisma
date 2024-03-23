@@ -1,0 +1,92 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model Country {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  code        String   @unique
+  name        String   @unique
+  description String?
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now()) @map(name: "created_at")
+  updatedAt   DateTime @updatedAt @map(name: "updated_at")
+
+  CountryVisaOption  VisaOption[]  @relation(name: "CountryVisaOption")
+  PassportVisaOption VisaOption[]  @relation(name: "PassportVisaOption")
+  Translation        Translation[]
+}
+
+model Residency {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  name        String   @unique
+  description String?
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now()) @map(name: "created_at")
+  updatedAt   DateTime @updatedAt @map(name: "updated_at")
+
+  VisaOption  VisaOption[]
+  Translation Translation[]
+}
+
+model Visa {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  name        String   @unique
+  description String?
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now()) @map(name: "created_at")
+  updatedAt   DateTime @updatedAt @map(name: "updated_at")
+
+  VisaOption  VisaOption[]
+  Translation Translation[]
+}
+
+model VisaOption {
+  id          String   @id @default(auto()) @map("_id") @db.ObjectId
+  published   Boolean  @default(true)
+  createdAt   DateTime @default(now()) @map(name: "created_at")
+  updatedAt   DateTime @updatedAt @map(name: "updated_at")
+  name        String?
+  description String?
+  maxStay     Int?
+  validity    Int?
+
+  Country     Country @relation(name: "CountryVisaOption", fields: [countryCode], references: [code])
+  countryCode String
+
+  Passport            Country @relation(name: "PassportVisaOption", fields: [passportCountryCode], references: [code])
+  passportCountryCode String
+
+  Residency   Residency? @relation(fields: [residencyId], references: [id])
+  residencyId String?    @db.ObjectId
+
+  Visa   Visa?   @relation(fields: [visaId], references: [id])
+  visaId String? @db.ObjectId
+
+  @@unique([countryCode, passportCountryCode, residencyId, visaId])
+}
+
+model Translation {
+  id        String   @id @default(auto()) @map("_id") @db.ObjectId
+  lang      String
+  text      String
+  createdAt DateTime @default(now()) @map(name: "created_at")
+  updatedAt DateTime @updatedAt @map(name: "updated_at")
+
+  Country     Country? @relation(fields: [countryCode], references: [code])
+  countryCode String?
+
+  Residency   Residency? @relation(fields: [residencyId], references: [id])
+  residencyId String?    @db.ObjectId
+
+  Visa   Visa?   @relation(fields: [visaId], references: [id])
+  visaId String? @db.ObjectId
+
+  @@unique([lang, countryCode])
+  @@unique([lang, residencyId])
+  @@unique([lang, visaId])
+}
