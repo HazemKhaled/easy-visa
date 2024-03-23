@@ -1,12 +1,12 @@
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
 
-import prisma from '@/lib/prisma';
+import { listCountries } from '@/models/country';
 
 export default async function Index() {
   const t = await getTranslations('Index');
 
-  const countries = await getCountries();
+  const countries = await listCountries();
 
   return (
     <>
@@ -28,19 +28,4 @@ export default async function Index() {
       </Suspense>
     </>
   );
-}
-
-async function getCountries() {
-  return prisma.country.findMany({
-    include: {
-      Translation: {
-        where: {
-          lang: 'AR',
-        },
-        select: {
-          text: true,
-        },
-      },
-    },
-  });
 }
