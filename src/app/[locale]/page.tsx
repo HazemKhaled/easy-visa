@@ -1,12 +1,17 @@
 import { getTranslations } from 'next-intl/server';
 import { Suspense } from 'react';
 
-import { listCountries } from '@/models/country';
+import CountryModel from '@/models/CountryModel';
+
+async function getData() {
+  const countryModel = new CountryModel();
+  return countryModel.getAllWithLocal();
+}
 
 export default async function Index() {
   const t = await getTranslations('Index');
 
-  const countries = await listCountries();
+  const countries = await getData();
 
   return (
     <>
