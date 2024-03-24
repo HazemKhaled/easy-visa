@@ -1,5 +1,13 @@
 {
+  "Metadata": {
+    "title": "مرحبا بكم في العالم!"
+  },
   "Index": {
-    "title": "آهلا!"
+    "title": "آهلا!",
+    "content": "قريبا"
+  },
+  "AboutPage": {
+    "title": "حول",
+    "content": "قريبا"
   }
 }

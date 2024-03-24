@@ -1,36 +1,39 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Easy Visa
 
-## Getting Started
+## Scope
 
-First, run the development server:
+### Main Layout
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- [ ] Layout
+- [ ] /[locale]/
+- [ ] /[locale]/page/about
+- [ ] /[locale]/page/contact-us
+- [ ] /[locale]/page/privacy
+- [ ] /[locale]/page/terms-and-conditions
+- [ ] /[locale]/sitemap.xml
+- [ ] /[locale]/404
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Visit
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- [ ] /[locale]/visit/[country]
+- [ ] /[locale]/visit/[country]/[nationality]
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+### Visa
 
-## Learn More
+- [ ] /[locale]/visa/[nationality]
+- [ ] /[locale]/visa/[nationality]/[country]
 
-To learn more about Next.js, take a look at the following resources:
+### Eternity
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- [ ] /[locale]/eternity/[days]-trip-in-[country]
+- [ ] /[locale]/eternity/[country]/[days]-trip-in-[city]
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Blog
 
-## Deploy on Vercel
+- [ ]/[locale]/blog/[category]/[slug]
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Service
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Flight tickets
+- [ ] Accommodation
+- [ ] Car Rental

@@ -1,5 +1,13 @@
 {
-  "Index": {
+  "Metadata": {
     "title": "Hello world!"
+  },
+  "Index": {
+    "title": "Hello world!",
+    "content": "Coming Soon!"
+  },
+  "AboutPage": {
+    "title": "About",
+    "content": "This is a simple about page."
   }
 }

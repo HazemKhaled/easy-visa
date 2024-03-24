@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 
-export default function Index() {
-  const t = useTranslations('Index');
+export default function PrivacyPage() {
+  const t = useTranslations('PrivacyPage');
 
   return (
     <>
