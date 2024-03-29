@@ -3,7 +3,7 @@ import React from 'react';
 const Logo = () => {
   return (
     <div>
-      <h1 className=' text-cyan-500 font-semibold text-xl '>Easy Visa</h1>
+      <h1 className=' w-36 text-cyan-500 font-semibold text-xl '>Easy Visa</h1>
     </div>
   );
 };
