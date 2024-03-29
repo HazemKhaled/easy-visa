@@ -2,6 +2,12 @@
   "Metadata": {
     "title": "Hello world!"
   },
+  "Layout": {
+    "AboutNavBtn": "About",
+    "ContactUsNavBtn": "Contact us",
+    "PrivacyNavBtn": "Privacy",
+    "TermsNavBtn": "Terms and Conditions"
+  },
   "Index": {
     "title": "Hello world!",
     "content": "Coming Soon!"

@@ -2,6 +2,12 @@
   "Metadata": {
     "title": "مرحبا بكم في العالم!"
   },
+  "Layout": {
+    "AboutNavBtn": "عن",
+    "ContactUsNavBtn": "اتصل بنا",
+    "PrivacyNavBtn": "خصوصية",
+    "TermsNavBtn": "الأحكام والشروط"
+  },
   "Index": {
     "title": "آهلا!",
     "content": "قريبا"
