@@ -13,7 +13,15 @@
     "content": "Coming Soon!"
   },
   "AboutPage": {
-    "title": "About",
-    "content": "This is a simple about page."
+    "about": "About",
+    "ourMission": "Our Mission",
+    "HowItWorks": "How It Works",
+    "OurCommitment": "Our Commitment",
+    "AboutContent": "Welcome to Easy Visa, your one-stop destination for hassle-free visa processing. At Easy Visa, we understand the complexities and uncertainties associated with obtaining visas for international travel. That's why we've dedicated ourselves to simplifying the visa application process, ensuring a smooth and efficient experience for our customers.",
+    "MissionContent": "Our mission at Easy Visa is simple: to empower individuals to explore the world without the burden of visa-related complications. We believe that travel should be accessible to all, regardless of passport limitations or bureaucratic hurdles. By leveraging cutting-edge technology and a team of experienced professionals, we strive to make the visa application process transparent, convenient, and stress-free.",
+    "HowItWorksContent": "Using our intuitive platform, travelers can easily input their passport details and desired travel destinations. Our system then analyzes this information to provide personalized recommendations on visa requirements and available options. Whether you're planning a leisurely vacation, a business trip, or a study abroad experience, Easy Visa ensures that you have all the necessary information to navigate the visa process with ease.",
+    "OurCommitmentContent": "At Easy Visa, customer satisfaction is our top priority. We are committed to delivering exceptional service and support at every step of your visa journey. Our team of visa experts is here to answer your questions, address your concerns, and provide guidance whenever you need it. With Easy Visa by your side, you can embark on your travels with confidence and peace of mind.",
+    "ApplyBtnBanner": "Apply Now",
+    "ApplyForVisa": "Apply For Your Visa Now!"
   }
 }
