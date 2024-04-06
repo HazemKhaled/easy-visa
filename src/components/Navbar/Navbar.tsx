@@ -1,8 +1,6 @@
 import LangSwitcher from '@/components/Navbar/LangSwitcher';
 import NavbarBtn from '@/components/Navbar/NavBarBtn';
 
-import { locales } from '@/i18n';
-
 import Logo from './Logo';
 
 const Navbar = () => {
@@ -15,7 +13,7 @@ const Navbar = () => {
         <NavbarBtn />
       </div>
       <div>
-        <LangSwitcher locales={locales} />
+        <LangSwitcher />
       </div>
     </div>
   );
