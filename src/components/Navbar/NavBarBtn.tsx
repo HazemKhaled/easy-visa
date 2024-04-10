@@ -5,9 +5,7 @@ const NavbarBtn = () => {
 
   return (
     <div className=' flex col-span-4 gap-10 text-gray-500 '>
-      <NavBtn>
-        <a href=''>{t('AboutNavBtn')}</a>
-      </NavBtn>
+      <NavBtn>{t('AboutNavBtn')}</NavBtn>
       <NavBtn>{t('ContactUsNavBtn')}</NavBtn>
       <NavBtn>{t('PrivacyNavBtn')}</NavBtn>
       <NavBtn>{t('TermsNavBtn')}</NavBtn>
