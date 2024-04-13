@@ -23,5 +23,13 @@
     "OurCommitmentContent": "At Easy Visa, customer satisfaction is our top priority. We are committed to delivering exceptional service and support at every step of your visa journey. Our team of visa experts is here to answer your questions, address your concerns, and provide guidance whenever you need it. With Easy Visa by your side, you can embark on your travels with confidence and peace of mind.",
     "ApplyBtnBanner": "Apply Now",
     "ApplyForVisa": "Apply For Your Visa Now!"
+  },
+  "ContactPage": {
+    "ContactUs": "Contact Us",
+    "FullName": "Full Name",
+    "Email": "Email",
+    "Subject": "Subject",
+    "Message": "Message",
+    "SendMessage": "Send Message"
   }
 }

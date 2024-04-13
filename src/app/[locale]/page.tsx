@@ -1,4 +1,4 @@
-import AboutPage from '@/app/[locale]/page/about/page';
+import ContactPage from '@/app/[locale]/page/contact-us/page';
 
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -6,7 +6,7 @@ export default function Index() {
   return (
     <div>
       <Navbar />
-      <AboutPage />
+      <ContactPage />
     </div>
   );
 }
