@@ -51,5 +51,18 @@
     "WeMayUse": "We may use third-party services to facilitate our Service and to analyze how our Service is used. These third-party services may have their own privacy policies governing the use of your information.",
     "YourChoices": "Your Choices",
     "YouMayChoose": "You may choose to opt-out of certain data collection and use, although this may limit your ability to use certain features of our Service."
+  },
+  "TermsPage": {
+    "TermsAndCondition": "Terms and Conditions",
+    "Welcome": "Welcome to Easy Visa. By using our website, you agree to comply with and be bound by the following terms and conditions:",
+    "UseOfCookies": "Use of Cookies",
+    "WeUseCookies": "We use cookies to enhance your browsing experience. By using our website, you consent to our use of cookies in accordance with our privacy policy.",
+    "IntellectualProperty": "Intellectual Property",
+    "AllContent": "All content on our website is owned by Easy Visa or its licensors and is protected by copyright laws. You may not use our content without our permission.",
+    "LinksToOther": "Links to Other Websites",
+    "OurWebsite": "Our website may contain links to third-party websites. We are not responsible for the content of these websites or any damage or loss that may occur from using them.",
+    "Limitations": "Limitations of Liability",
+    "WeDo": "We do our best to provide accurate and up-to-date information on our website, but we cannot guarantee its completeness or accuracy. We are not liable for any damages resulting from the use of our website.",
+    "ByUsing": "By using our website, you agree to these terms and conditions."
   }
 }

@@ -1,5 +1,6 @@
-
 import { useTranslations } from 'next-intl';
+
+import TermsPage from '@/app/[locale]/page/terms-and-conditions/page';
 
 import Navbar from '../../components/Navbar/Navbar';
 
@@ -8,7 +9,7 @@ export default function Index() {
   return (
     <div>
       <Navbar />
-      <h1 className=' pt-[100px] '>{t('title')} </h1>
+      <TermsPage />
     </div>
   );
 }
