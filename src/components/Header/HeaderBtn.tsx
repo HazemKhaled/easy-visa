@@ -1,14 +1,16 @@
 import { useTranslations } from 'next-intl';
 
+import { Link } from '@/lib/navigation';
+
 const NavbarBtn = () => {
   const t = useTranslations('Layout');
 
   return (
     <div className='flex col-span-4 gap-10 text-gray-500'>
-      <NavBtn href='/about'>{t('AboutNavBtn')}</NavBtn>
-      <NavBtn href='/contact'>{t('ContactUsNavBtn')}</NavBtn>
-      <NavBtn href='/privacy'>{t('PrivacyNavBtn')}</NavBtn>
-      <NavBtn href='/terms'>{t('TermsNavBtn')}</NavBtn>
+      <NavBtn href='/page/about'>{t('AboutNavBtn')}</NavBtn>
+      <NavBtn href='/page/contact-us'>{t('ContactUsNavBtn')}</NavBtn>
+      <NavBtn href='/page/privacy'>{t('PrivacyNavBtn')}</NavBtn>
+      <NavBtn href='/page/terms-and-conditions'>{t('TermsNavBtn')}</NavBtn>
     </div>
   );
 };
@@ -23,11 +25,11 @@ const NavBtn = ({
   children: string | JSX.Element;
 }) => {
   return (
-    <a
+    <Link
       href={href}
       className='h-8 px-1 hover:text-cyan-500 rounded-lg hover:font-semibold hover:scale-105 duration-200'
     >
       {children}
-    </a>
+    </Link>
   );
 };

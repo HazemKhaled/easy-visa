@@ -3,8 +3,6 @@
     // Tailwind CSS Intellisense
     "dbaeumer.vscode-eslint",
     "esbenp.prettier-vscode",
-    "aaron-bond.better-comments",
-    "bradlc.vscode-tailwindcss",
-    "Prisma.prisma"
+    "bradlc.vscode-tailwindcss"
   ]
 }

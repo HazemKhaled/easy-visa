@@ -8,6 +8,10 @@
     "PrivacyNavBtn": "Privacy",
     "TermsNavBtn": "Terms and Conditions"
   },
+  "LocaleSwitcher": {
+    "label": "Change language",
+    "locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"
+  },
   "Index": {
     "title": "Hello world!",
     "content": "Coming Soon!"

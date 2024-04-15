@@ -1,5 +1,5 @@
-import LangSwitcher from '@/components/Navbar/LangSwitcher';
-import NavbarBtn from '@/components/Navbar/NavBarBtn';
+import HeaderBtn from '@/components/Header/HeaderBtn';
+import LocaleSwitcher from '@/components/Header/LocaleSwitcher';
 
 import Logo from './Logo';
 
@@ -10,10 +10,10 @@ const Navbar = () => {
         <Logo />
       </div>
       <div className='md:w-full w-48 mr-8 overflow-x-scroll md:overflow-x-hidden flex justify-start md:justify-center items-center '>
-        <NavbarBtn />
+        <HeaderBtn />
       </div>
       <div>
-        <LangSwitcher />
+        <LocaleSwitcher />
       </div>
     </div>
   );

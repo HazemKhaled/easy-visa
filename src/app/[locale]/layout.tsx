@@ -1,9 +1,11 @@
-import { Inter } from 'next/font/google';
+import { Cairo } from 'next/font/google';
 import { getTranslations } from 'next-intl/server';
 
 import '../globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import Navbar from '@/components/Header/Header';
+
+const cairo = Cairo({ subsets: ['latin'] });
 
 export async function generateMetadata({
   params: { locale },
@@ -25,8 +27,11 @@ export default function LocaleLayout({
   params: { locale: string };
 }) {
   return (
-    <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <body className={cairo.className}>
+        <Navbar />
+        <main>{children}</main>
+      </body>
     </html>
   );
 }

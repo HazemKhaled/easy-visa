@@ -8,6 +8,10 @@
     "PrivacyNavBtn": "خصوصية",
     "TermsNavBtn": "الأحكام والشروط"
   },
+  "LocaleSwitcher": {
+    "label": "تغييى اللغد",
+    "locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"
+  },
   "Index": {
     "title": "آهلا!",
     "content": "قريبا"
