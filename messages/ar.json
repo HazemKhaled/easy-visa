@@ -9,7 +9,7 @@
     "TermsNavBtn": "الأحكام والشروط"
   },
   "LocaleSwitcher": {
-    "Label": "تغييى اللغد",
+    "Label": "تغيير اللغة",
     "Locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"
   },
   "Index": {
