@@ -9,7 +9,7 @@ interface TextAreaProps {
 const TextArea: React.FC<TextAreaProps> = ({ rows = 3, id, name }) => {
   return (
     <textarea
-      className='border-2 w-[370px] rounded-lg p-3 focus:border-cyan-500 focus:outline-none focus:ring focus:ring-purple-50 font-inter text-md font-normal leading-6 '
+      className='border-2 w-[370px] 2xl:w-[450px] rounded-lg p-3 focus:border-cyan-500 focus:outline-none focus:ring focus:ring-purple-50 font-inter text-md font-normal leading-6 '
       rows={rows}
       id={id}
       name={name}

@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 
-import Input from '../../../../components/Contact/Input';
-import TextArea from '../../../../components/Contact/TextArea';
+import Input from '@/components/Contact/Input';
+import TextArea from '@/components/Contact/TextArea';
 
 export default function ContactPage() {
   const t = useTranslations('ContactPage');
@@ -10,7 +10,7 @@ export default function ContactPage() {
   return (
     <div className='w-full h-full flex justify-center items-center py-[100px] '>
       <div className=' w-[1240px] 2xl:w-[1500px] flex justify-center '>
-        <div className=' md:w-[800px] 2xl:w-[1240px] h-full  mt-20 md:flex justify-between items-start '>
+        <div className=' md:w-[800px] 2xl:w-[900px] h-full  mt-20 md:flex justify-between items-start '>
           <div>
             <h1 className=' my-5 text-4xl font-bold '>{t('ContactUs')}</h1>
             <div>

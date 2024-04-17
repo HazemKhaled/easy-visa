@@ -1,6 +1,6 @@
 {
   "Metadata": {
-    "title": "Hello world!"
+    "Title": "Hello world!"
   },
   "Layout": {
     "AboutNavBtn": "About",
@@ -9,16 +9,16 @@
     "TermsNavBtn": "Terms and Conditions"
   },
   "LocaleSwitcher": {
-    "label": "Change language",
-    "locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"
+    "Label": "Change language",
+    "Locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"
   },
   "Index": {
-    "title": "Hello world!",
-    "content": "Coming Soon!"
+    "Title": "Hello world!",
+    "Content": "Coming Soon!"
   },
   "AboutPage": {
-    "about": "About",
-    "ourMission": "Our Mission",
+    "About": "About",
+    "OurMission": "Our Mission",
     "HowItWorks": "How It Works",
     "OurCommitment": "Our Commitment",
     "AboutContent": "Welcome to Easy Visa, your one-stop destination for hassle-free visa processing. At Easy Visa, we understand the complexities and uncertainties associated with obtaining visas for international travel. That's why we've dedicated ourselves to simplifying the visa application process, ensuring a smooth and efficient experience for our customers.",
