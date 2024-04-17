@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 
 import '../globals.css';
 
-import Navbar from '@/components/Header/Header';
+import Header from '@/components/Header/Header';
 
 const cairo = Cairo({ subsets: ['latin'] });
 
@@ -29,7 +29,7 @@ export default function LocaleLayout({
   return (
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className={cairo.className}>
-        <Navbar />
+        <Header />
         <main>{children}</main>
       </body>
     </html>
