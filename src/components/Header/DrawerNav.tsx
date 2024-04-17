@@ -1,9 +1,14 @@
-import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { AiOutlineClose } from 'react-icons/ai';
 
-function DrawerNav(props) {
+import { Link } from '@/lib/navigation';
+
+interface DrawerNavProps {
+  nav: boolean;
+  handleNav: () => void;
+}
+
+function DrawerNav(props: DrawerNavProps) {
   const { nav, handleNav } = props;
 
   return (
@@ -23,9 +28,9 @@ function DrawerNav(props) {
       >
         <div>
           <div className='flex w-full items-center justify-between'>
-            <Link onClick={handleNav} href=''>
-              <Image src='/assets/navLgo.png' alt='' width='100' height='50' />
-            </Link>
+            <h1 className=' w-36 text-cyan-500 font-semibold text-2xl '>
+              <Link href='/'>Easy Visa</Link>
+            </h1>
             <div
               onClick={handleNav}
               className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
@@ -33,41 +38,30 @@ function DrawerNav(props) {
               <AiOutlineClose />
             </div>
           </div>
-          <div className='border-b border-gray-300 my-4'>
-            <p className='w-[85%] md:[90%] py-4'>
-              Lets build something legendary together
-            </p>
-          </div>
           <div>
             <ul className='py-4 flex-col'>
-              <Link href=''>
-                <li onClick={handleNav} className='py-4 text-sm'>
-                  {' '}
-                  Home
-                </li>
-              </Link>
-              <Link href='/#about'>
+              <Link href='/page/about'>
                 <li onClick={handleNav} className='py-4 text-sm'>
                   {' '}
                   About
                 </li>
               </Link>
-              <Link href='/#skills'>
+              <Link href='/page/contact-us'>
                 <li onClick={handleNav} className='py-4 text-sm'>
                   {' '}
-                  Skills
+                  Contact Us
                 </li>
               </Link>
-              <Link href='/#projects'>
+              <Link href='/page/privacy'>
                 <li onClick={handleNav} className='py-4 text-sm'>
                   {' '}
-                  Projects
+                  Privacy
                 </li>
               </Link>
-              <Link href='/#contact'>
+              <Link href='/page/terms-and-conditions'>
                 <li onClick={handleNav} className='py-4 text-sm'>
                   {' '}
-                  Contact
+                  Terms and Conditions
                 </li>
               </Link>
             </ul>
