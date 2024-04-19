@@ -1,7 +1,7 @@
 import { Cairo } from 'next/font/google';
 import { getTranslations } from 'next-intl/server';
 
-import '@/app/globals.css';
+import './globals.css';
 
 import Header from '@/components/Header/Header';
 
@@ -30,7 +30,7 @@ export default function LocaleLayout({
     <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
       <body className={cairo.className}>
         <Header />
-        <main className='pt-[100px]'>{children}</main>
+        <main className='flex-grow pt-20'>{children}</main>
       </body>
     </html>
   );
