@@ -17,7 +17,9 @@ export default function DrawerNav({ children }: Props) {
 
   return (
     <>
-      <AiOutlineMenu onClick={handleNav} size={25} className='md:hidden' />
+      <div className=' w-full flex justify-end '>
+        <AiOutlineMenu onClick={handleNav} size={25} className='md:hidden' />
+      </div>
       <div
         className={
           nav

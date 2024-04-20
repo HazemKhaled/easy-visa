@@ -8,6 +8,9 @@
     "PrivacyNavBtn": "خصوصية",
     "TermsNavBtn": "الأحكام والشروط"
   },
+  "Header": {
+    "EasyVisa": "ايزي فيزا"
+  },
   "LocaleSwitcher": {
     "Label": "تغيير اللغة",
     "Locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"

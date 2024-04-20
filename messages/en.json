@@ -8,6 +8,9 @@
     "PrivacyNavBtn": "Privacy",
     "TermsNavBtn": "Terms and Conditions"
   },
+  "Header": {
+    "EasyVisa": "Easy Visa"
+  },
   "LocaleSwitcher": {
     "Label": "Change language",
     "Locale": "{locale, select, ar {🇸🇦 عربي} en {🇺🇸 English} other {Unknown}}"
