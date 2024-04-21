@@ -1,9 +1,11 @@
-import { Inter } from 'next/font/google';
+import { Cairo } from 'next/font/google';
 import { getTranslations } from 'next-intl/server';
 
-import '../globals.css';
+import './globals.css';
 
-const inter = Inter({ subsets: ['latin'] });
+import Header from '@/components/Header/Header';
+
+const cairo = Cairo({ subsets: ['latin'] });
 
 export async function generateMetadata({
   params: { locale },
@@ -13,7 +15,7 @@ export async function generateMetadata({
   const t = await getTranslations({ locale, namespace: 'Metadata' });
 
   return {
-    title: t('title'),
+    title: t('Title'),
   };
 }
 
@@ -25,8 +27,11 @@ export default function LocaleLayout({
   params: { locale: string };
 }) {
   return (
-    <html lang={locale}>
-      <body className={inter.className}>{children}</body>
+    <html lang={locale} dir={locale === 'ar' ? 'rtl' : 'ltr'}>
+      <body className={cairo.className}>
+        <Header />
+        <main className='flex-grow pt-20'>{children}</main>
+      </body>
     </html>
   );
 }
